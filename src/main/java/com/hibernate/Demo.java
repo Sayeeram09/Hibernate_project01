@@ -16,6 +16,17 @@ public class Demo {
 		//create transaction to begin and commit the transaction
 		EntityTransaction et=em.getTransaction();
 		System.out.println("Transaction is created...");
-		
+		//begin the transaction
+		et.begin();	
+		//create the object of student class and set the value
+		Anime s=new Anime();
+		// s.setId(1);
+		// s.setName("John");
+		// s.setCity("New York");
+		// //persist the object
+		em.persist(s);
+		//commit the transaction
+		et.commit();
+		System.out.println("Data Inserted...");
 	}
 }
