@@ -12,21 +12,21 @@ public class Demo {
 		System.out.println("Connection Establishing....");
 		//create entity manager to perform crud operation
 		EntityManager em=emf.createEntityManager();
-		System.out.println("cm Created");
+		// System.out.println("cm Created");
 		//create transaction to begin and commit the transaction
 		EntityTransaction et=em.getTransaction();
 		System.out.println("Transaction is created...");
 		//begin the transaction
-		et.begin();	
+		// et.begin();	
 		//create the object of student class and set the value
-		Anime s=new Anime();
+		// Anime s=new Anime();
 		// s.setId(1);
 		// s.setName("John");
 		// s.setCity("New York");
 		// //persist the object
-		em.persist(s);
+		// em.persist(s);
 		//commit the transaction
-		et.commit();
+		// et.commit();
 		System.out.println("Data Inserted...");
 	}
 }
