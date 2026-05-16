@@ -11,7 +11,7 @@
     <version>6.5.2.Final</version>
     <scope>compile</scope>
 </dependency>
-
+<!-- mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
 <!-- Source: https://mvnrepository.com/artifact/org.postgresql/postgresql -->
 <dependency>
     <groupId>org.postgresql</groupId>
@@ -20,4 +20,6 @@
     <scope>compile</scope>
 </dependency>
   </dependencies>
+
+  <!-- hibernate and postgresql dependencies are added to the project. You can run the project using the command "mvn spring-boot:run" in the terminal. Make sure you have a PostgreSQL database running and update the application.properties file with your database connection details before running the project. -->
 </project>
